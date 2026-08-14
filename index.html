@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of David Pérez, Computer Systems Engineer and full-stack developer: web, mobile and desktop projects.">
+  <title>David Pérez — Computer Systems Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#inicio" class="nav__logo">David<span>Pérez</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#inicio" class="nav__link">Home</a></li>
+          <li><a href="#sobre-mi" class="nav__link">About</a></li>
+          <li><a href="#experiencia" class="nav__link">Experience</a></li>
+          <li><a href="#habilidades" class="nav__link">Skills</a></li>
+          <li><a href="#proyectos" class="nav__link">Projects</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <svg class="hero__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+          <line x1="14" y1="4" x2="10" y2="20"></line>
+        </svg>
+        <p class="hero__saludo">// hello, I'm</p>
+        <h1 class="hero__nombre">David Pérez</h1>
+        <div class="hero__pildoras">
+          <span class="hero__pildora hero__pildora--principal">Computer Systems Engineer</span>
+          <span class="hero__pildora hero__pildora--secundaria">Web Development · Systems Administration</span>
+        </div>
+        <div class="hero__acciones">
+          <a class="btn btn--primario" href="assets/CV-David-Perez.pdf" target="_blank" rel="noopener noreferrer">View CV</a>
+          <a href="#proyectos" class="btn btn--secundario">See my work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="seccion" id="sobre-mi">
+      <div class="container reveal">
+        <h2 class="seccion__titulo">About me</h2>
+        <div class="sobre-mi">
+          <figure class="sobre-mi__foto">
+            <img src="assets/foto.jpg" alt="David Pérez" width="800" height="753" loading="lazy">
+          </figure>
+          <div class="sobre-mi__texto">
+            <p class="sobre-mi__bio">I'm a software developer with over 2 years of experience designing and implementing solutions in professional environments. I build web and mobile applications with technologies like Java, Python, React and Flutter, focusing on scalability, efficiency and continuous improvement. Passionate about adopting new technologies, I contribute solid technical skills together with emotional intelligence and teamwork.</p>
+            <ul class="sobre-mi__datos">
+              <li><strong>Location:</strong> Nuevo Laredo, Tamaulipas, Mexico</li>
+              <li><strong>Education:</strong> B.S. in Computer Systems Engineering — TecNM (2021–2026)</li>
+              <li><strong>Focus:</strong> full-stack web and mobile development</li>
+              <li><strong>Languages:</strong> Spanish (native), English (B2 — EF SET)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="seccion seccion--alt" id="experiencia">
+      <div class="container reveal">
+        <h2 class="seccion__titulo">Experience</h2>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <p class="timeline__periodo">Jun 2026 – Present</p>
+            <h3 class="timeline__puesto">Software Engineer — ADUASIS NLD</h3>
+            <p class="timeline__desc">Backend development with Java and artificial intelligence. Remote from Nuevo Laredo.</p>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__periodo">Jul 2025 – Jun 2026</p>
+            <h3 class="timeline__puesto">Intern (full-time) — ADUASIS NLD</h3>
+            <p class="timeline__desc">Project management and full-stack development with Java.</p>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__periodo">Oct 2024 – Jul 2025</p>
+            <h3 class="timeline__puesto">Freelance Developer — Vertex project</h3>
+            <p class="timeline__desc">Independent project: design and development of a marketing landing page and web solutions for a client.</p>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__periodo">Dec 2023 – Sep 2024</p>
+            <h3 class="timeline__puesto">Intern (part-time) — ADUASIS NLD</h3>
+            <p class="timeline__desc">Java development and version control with TortoiseSVN.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="seccion" id="habilidades">
+      <div class="container reveal">
+        <h2 class="seccion__titulo">Skills</h2>
+        <div class="skills">
+          <div class="skills__grupo">
+            <h3>Languages</h3>
+            <ul class="skills__lista">
+              <li>Java</li>
+              <li>C#</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Dart</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+          </div>
+          <div class="skills__grupo">
+            <h3>Frameworks & libraries</h3>
+            <ul class="skills__lista">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Flutter</li>
+              <li>Flask</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Electron</li>
+            </ul>
+          </div>
+          <div class="skills__grupo">
+            <h3>Tools & platforms</h3>
+            <ul class="skills__lista">
+              <li>Git</li>
+              <li>TortoiseSVN</li>
+              <li>GitHub</li>
+              <li>Docker</li>
+              <li>PostgreSQL</li>
+              <li>Supabase</li>
+              <li>Stripe</li>
+              <li>IntelliJ IDEA</li>
+              <li>Vercel</li>
+              <li>Railway</li>
+              <li>Claude Code</li>
+              <li>Kimi Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="seccion seccion--alt" id="proyectos">
+      <div class="container reveal">
+        <h2 class="seccion__titulo">Projects</h2>
+        <div class="proyectos">
+
+          <article class="card">
+            <h3 class="card__titulo">CTPAT-QR</h3>
+            <p class="card__descripcion">
+              Full-stack QR management platform: Next.js frontend, Node.js/Express REST API,
+              PostgreSQL database and Stripe payments.
+            </p>
+            <ul class="card__tags">
+              <li>Next.js</li><li>TypeScript</li><li>Express</li><li>PostgreSQL</li><li>Stripe</li>
+            </ul>
+            <a class="card__link" href="https://github.com/DavidZPC03/ctpat-qr" target="_blank" rel="noopener noreferrer" aria-label="CTPAT-QR on GitHub">View on GitHub →</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__titulo">TaskTraker</h3>
+            <p class="card__descripcion">
+              Full-stack task manager built with Flask: authentication, task and category CRUD,
+              and an analytics dashboard. Ready for Docker, Vercel and Railway.
+            </p>
+            <ul class="card__tags">
+              <li>Python</li><li>Flask</li><li>JavaScript</li><li>Docker</li>
+            </ul>
+            <a class="card__link" href="https://github.com/DavidZPC03/TaskTraker" target="_blank" rel="noopener noreferrer" aria-label="TaskTraker on GitHub">View on GitHub →</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__titulo">Ranki</h3>
+            <p class="card__descripcion">
+              Mobile app built with Flutter: rankings, matches, organizations and seasons,
+              with Supabase backend and Stripe billing.
+            </p>
+            <ul class="card__tags">
+              <li>Flutter</li><li>Dart</li><li>Supabase</li><li>Firebase</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card__titulo">lenguaje-nova</h3>
+            <p class="card__descripcion">
+              Custom programming language project: compiler, example programs and a web editor
+              built with React, TypeScript and Vite, with a Python backend.
+            </p>
+            <ul class="card__tags">
+              <li>TypeScript</li><li>React</li><li>Vite</li><li>Python</li>
+            </ul>
+            <a class="card__link" href="https://github.com/DavidZPC03/lenguaje-nova" target="_blank" rel="noopener noreferrer" aria-label="lenguaje-nova on GitHub">View on GitHub →</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__titulo">vertex-landing</h3>
+            <p class="card__descripcion">
+              Marketing landing page: static site with vanilla HTML, CSS and JavaScript,
+              with SEO metadata and sitemap.
+            </p>
+            <ul class="card__tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>SEO</li>
+            </ul>
+            <a class="card__link" href="https://github.com/DavidZPC03/vertex-landing" target="_blank" rel="noopener noreferrer" aria-label="vertex-landing on GitHub">View on GitHub →</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__titulo">messenger-bubble</h3>
+            <p class="card__descripcion">
+              Desktop application built with Electron: an always-accessible
+              floating messenger-style bubble window.
+            </p>
+            <ul class="card__tags">
+              <li>Electron</li><li>JavaScript</li><li>HTML</li>
+            </ul>
+            <a class="card__link" href="https://github.com/DavidZPC03/messenger-bubble" target="_blank" rel="noopener noreferrer" aria-label="messenger-bubble on GitHub">View on GitHub →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="seccion" id="educacion">
+      <div class="container reveal">
+        <h2 class="seccion__titulo">Education & certifications</h2>
+        <div class="educacion">
+          <div class="educacion__item">
+            <h3>B.S. in Computer Systems Engineering</h3>
+            <p class="educacion__detalle">Instituto Tecnológico Nacional de México (TecNM)</p>
+            <p class="educacion__periodo">Aug 2021 – May 2026</p>
+          </div>
+          <div class="educacion__item">
+            <h3>EF SET English Certificate — 59/100 (B2 Upper Intermediate)</h3>
+            <p class="educacion__detalle">EF Standard English Test</p>
+            <p class="educacion__periodo">Jan 2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="anio"></span> David Pérez · Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
