@@ -7,6 +7,21 @@
 (function () {
   'use strict';
 
+  /* ---------- Tema claro/oscuro ---------- */
+
+  var themeToggle = document.getElementById('theme-toggle');
+
+  themeToggle.addEventListener('click', function () {
+    var actual = document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
+    var nuevo = actual === 'light' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = nuevo;
+    try {
+      localStorage.setItem('theme', nuevo);
+    } catch (e) {
+      // localStorage no disponible (modo privado, file://): el tema no se persiste
+    }
+  });
+
   /* ---------- Menú móvil (hamburguesa) ---------- */
 
   var toggle = document.getElementById('nav-toggle');
